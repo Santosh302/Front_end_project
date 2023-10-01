@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <style>
+    h1{
+        text-align: center;
+        font-weight: 600;
+    }
+    img{
+        height:280px;
+        width: 300px;
+        padding-top:40px;
+    }
+    .container-fluid .navbar-collapse{
+    flex-grow:0;
+   }
+  </style>
+  <body>
+
+    <div class="container-fluid ">
+        <div id="header"></div>
+        <h1>Contact Us</h1>
+        <div class="row">
+            <div class="d-grid gap-2 col justify-content-center ">
+                <img src="data:image/jpeg;base64,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" alt="">
+            </div>
+            <div class=" d-grid gap-2 col"> 
+                <from >
+                    <h3>Name:</h3> 
+                    <input class="form-control" type="text" placeholder="Enter Your Name" aria-label="default input example" id="email"><br>
+                   
+                <h3>E-Mail:</h3> 
+                <input class="form-control" type="text" placeholder="Enter Your E-mail" aria-label="default input example" id="email"><br>
+                <label for="exampleFormControlTextarea1" class="form-label">Messages:</label>
+                <textarea class="form-control mb-3" id="exampleFormControlTextarea1" rows="3" placeholder="Enter your message"></textarea>   
+            </from>
+                <button onclick=validate() class="btn btn-primary" type="button">Login</button>
+         
+            </div>
+   </div>
+   <hr>
+   <div id="footer"> </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  
+   <script>
+    $(function(){
+        $("#header").load('../common/header.html')
+    })
+    $(function(){
+        $("#footer").load('../common/footer.html')
+    })
+     </script>
+  </body>
+</html>

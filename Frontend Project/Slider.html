@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+     <!-- font Awesome link -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+  </head>
+  <body>
+    <div class="container-fluid bg-secondary">
+      <h1 style="text-align: center;">Featured Products</h1>
+      <div id="carouselExample" class="carousel slide bg-dark">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row p-3  gy-3 my-3">
+              <div class="col-lg-3 col-md-4 col-sm-6 p-auto">
+                <div class="card mx-auto text-center" >
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlfgwDVPWvnCYufbB0cHmOJ-r8zf1XO091AQ&usqp=CAU" class="card-img-top" alt="..." height="350px">
+                  <div class="card-body">
+                    <h5 class="card-title">Item Name</h5>
+                    <h5>$15</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn " style="background-color:#ffc107;font-weight:800;"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 d-none   d-sm-block P-auto">
+                <div class="card mx-auto text-center">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmMYWcHJMGrcGAi1QKo4RjOh1iiAIn5MKagQ&usqp=CAU" class="card-img-top" alt="..." height="350px">
+                  <div class="card-body">
+                    <h5 class="card-title">Item Name</h5>
+                    <h5>$24</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn " style="background-color:#ffc107;font-weight:800;"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 d-none   d-md-block p-auto">
+                <div class="card mx-auto text-center">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw4E7i6Ork6-yfsLc7X1Fhqaqw2QfQYbU6tw&usqp=CAU" class="card-img-top" alt="..." height="350px">
+                  <div class="card-body">
+                    <h5 class="card-title">Qubo</h5>
+                    <h5>$26</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn " style="background-color:#ffc107;font-weight:800;"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 d-none   d-lg-block p-auto">
+                <div class="card mx-auto text-center" >
+                  <img src="data:image/jpeg;base64,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" alt="..." height="350px">
+                  <div class="card-body">
+                    <h5 class="card-title">Qubo</h5>
+                    <h5>$26</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn " style="background-color:#ffc107;font-weight:800;"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <div class="row p-3  gy-3 my-3">
+              <div class="col-lg-3 col-md-4 col-sm-6 p-auto">
+                <div class="card mx-auto text-center" >
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlfgwDVPWvnCYufbB0cHmOJ-r8zf1XO091AQ&usqp=CAU" class="card-img-top" alt="..." height="350px">
+                  <div class="card-body">
+                    <h5 class="card-title">Item Name</h5>
+                    <h5>$15</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn " style="background-color:#ffc107;font-weight:800;"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 d-none   d-sm-block P-auto">
+                <div class="card mx-auto text-center">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmMYWcHJMGrcGAi1QKo4RjOh1iiAIn5MKagQ&usqp=CAU" class="card-img-top" alt="..." height="350px">
+                  <div class="card-body">
+                    <h5 class="card-title">Item Name</h5>
+                    <h5>$24</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn " style="background-color:#ffc107;font-weight:800;"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 d-none   d-md-block p-auto">
+                <div class="card mx-auto text-center">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw4E7i6Ork6-yfsLc7X1Fhqaqw2QfQYbU6tw&usqp=CAU" class="card-img-top" alt="..." height="350px">
+                  <div class="card-body">
+                    <h5 class="card-title">Qubo</h5>
+                    <h5>$26</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn " style="background-color:#ffc107;font-weight:800;"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 d-none   d-lg-block p-auto">
+                <div class="card mx-auto text-center" >
+                  <img src="data:image/jpeg;base64,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" alt="..." height="350px">
+                  <div class="card-body">
+                    <h5 class="card-title">Qubo</h5>
+                    <h5>$26</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn " style="background-color:#ffc107;font-weight:800;"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <div class="row p-3  gy-3 my-3">
+              <div class="col-lg-3 col-md-4 col-sm-6 p-auto">
+                <div class="card mx-auto text-center" >
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlfgwDVPWvnCYufbB0cHmOJ-r8zf1XO091AQ&usqp=CAU" class="card-img-top" alt="..." height="350px">
+                  <div class="card-body">
+                    <h5 class="card-title">Item Name</h5>
+                    <h5>$15</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn " style="background-color:#ffc107;font-weight:800;"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 d-none   d-sm-block P-auto">
+                <div class="card mx-auto text-center">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmMYWcHJMGrcGAi1QKo4RjOh1iiAIn5MKagQ&usqp=CAU" class="card-img-top" alt="..." height="350px">
+                  <div class="card-body">
+                    <h5 class="card-title">Item Name</h5>
+                    <h5>$24</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn " style="background-color:#ffc107;font-weight:800;"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 d-none   d-md-block p-auto">
+                <div class="card mx-auto text-center">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw4E7i6Ork6-yfsLc7X1Fhqaqw2QfQYbU6tw&usqp=CAU" class="card-img-top" alt="..." height="350px">
+                  <div class="card-body">
+                    <h5 class="card-title">Qubo</h5>
+                    <h5>$26</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn " style="background-color:#ffc107;font-weight:800;"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 d-none   d-lg-block p-auto">
+                <div class="card mx-auto text-center" >
+                  <img src="data:image/jpeg;base64,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" alt="..." height="350px">
+                  <div class="card-body">
+                    <h5 class="card-title">Qubo</h5>
+                    <h5>$26</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn " style="background-color:#ffc107;font-weight:800;"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <div class="row p-3  gy-3 my-3">
+              <div class="col-lg-3 col-md-4 col-sm-6 p-auto">
+                <div class="card mx-auto text-center" >
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlfgwDVPWvnCYufbB0cHmOJ-r8zf1XO091AQ&usqp=CAU" class="card-img-top" alt="..." height="350px">
+                  <div class="card-body">
+                    <h5 class="card-title">Item Name</h5>
+                    <h5>$15</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn " style="background-color:#ffc107;font-weight:800;"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 d-none   d-sm-block P-auto">
+                <div class="card mx-auto text-center">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmMYWcHJMGrcGAi1QKo4RjOh1iiAIn5MKagQ&usqp=CAU" class="card-img-top" alt="..." height="350px">
+                  <div class="card-body">
+                    <h5 class="card-title">Item Name</h5>
+                    <h5>$24</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn " style="background-color:#ffc107;font-weight:800;"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 d-none   d-md-block p-auto">
+                <div class="card mx-auto text-center">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw4E7i6Ork6-yfsLc7X1Fhqaqw2QfQYbU6tw&usqp=CAU" class="card-img-top" alt="..." height="350px">
+                  <div class="card-body">
+                    <h5 class="card-title">Qubo</h5>
+                    <h5>$26</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn " style="background-color:#ffc107;font-weight:800;"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 d-none   d-lg-block p-auto">
+                <div class="card mx-auto text-center" >
+                  <img src="data:image/jpeg;base64,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" alt="..." height="350px">
+                  <div class="card-body">
+                    <h5 class="card-title">Qubo</h5>
+                    <h5>$26</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn " style="background-color:#ffc107;font-weight:800;"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    
+<!--     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  --> </body>
+</html>

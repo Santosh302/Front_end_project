@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <!-- Bootstrap CDN links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+   <!-- font Awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--Fonts Family-->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;1,100&family=Lobster&family=Playfair+Display&family=Poppins:ital,wght@0,300;0,400;1,300&family=Roboto+Slab:wght@200&display=swap" rel="stylesheet">
+    <style>
+        #logo{
+            color:#ffc107;
+            font-family:'Lobster', cursive;
+        }
+       
+       .navbar-collapse{
+        flex-grow:0;
+       }
+       a{
+        text-decoration: none;
+       }
+    </style>
+    
+</head>
+<body>
+    
+      <!-- first Section of Header -->
+      <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid " >
+          <a class="navbar-brand" href="#" id="logo">Ecommerce</a>
+          <button class="navbar-toggler bg-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse p-3 " id="navbarSupportedContent">
+            <form class="input-group d-flex" role="search">
+              <input class="form-control " type="search" placeholder="Search" aria-label="Search">
+              <button class="btn" Style="background-color: #ffc107;" type="submit"><a href="#" Style="color:black">Search</a></button>
+            </form>
+          </div>
+          <div class="collapse navbar-collapse p-2 me-2" id="navbarSupportedContent">
+           
+            <button class=" btn btn-warning me-3 " type="submit"><a href="../login.html" style="color:black">Login</a></button>
+             <a href="../cart.html" ><i class="fa-solid fa-cart-shopping fa-2xl " style="color: #ffc107;"></i></a> 
+           
+          </div>
+        </div>
+      </nav>
+    
+   
+      <!-- Second Section of Header -->
+      <ul class="nav justify-content-center bg-secondary">
+        <li class="nav-item">
+          <a class="nav-link link-dark "  href="../index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-dark" href="../allproduct.html">All Product</a>
+        </li>
+        <li class="nav-item dropdown ">
+            <a class="nav-link dropdown-toggle link-dark" href="../Women/allproduct.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+             Women
+            </a>
+            <ul class="dropdown-menu bg-secondary ">
+              <li><a class="dropdown-item" href="../Women/allproduct.html">All products</a></li>
+              <li><a class="dropdown-item" href="../Women/dress.html">Dresses</a></li>
+              <li><a class="dropdown-item" href="../Women/pants.html">Paints</a></li>
+              <li><a class="dropdown-item" href="../Women/skirts.html">Skirts</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle link-dark" href="../Men/allproduct.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+             Men
+            </a>
+            <ul class="dropdown-menu bg-secondary">
+              <li><a class="dropdown-item" href="../Men/allproduct.html">All products</a></li>
+              <li><a class="dropdown-item" href="../Men/shirts.html">Shirts</a></li>
+              <li><a class="dropdown-item" href="../Men/paints.html">Paints</a></li>
+              <li><a class="dropdown-item" href="../Men/hoodies.html">Hoodies</a></li>
+            </ul>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link link-dark" href="../Kid/kids.html">Kids</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-dark" href ="../contact.html">Contact</a>
+        </li>
+      </ul>
+    <!--   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+     -->
+</body>
+</html>
